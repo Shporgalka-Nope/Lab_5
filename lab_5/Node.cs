@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace lab_5
 {
-    internal class Node
+    internal class Node<T> where T : IComparable
     {
-        public int data;
-        public Node next;
+        public T data;
+        public Node<T>? next;
 
-        public Node(int d)
+        public Node(T d)
         {
             data = d;
         }
